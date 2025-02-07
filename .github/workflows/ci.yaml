@@ -37,6 +37,6 @@ jobs:
           password: ${{ secrets.DOCKER_PASSWORD }}
 
       - name: Build and push Docker image
-        run: |
+        run:
           docker build -t glarimy/glarimy-converter:latest .
           docker push glarimy/glarimy-converter:latest
